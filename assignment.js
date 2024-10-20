@@ -8,7 +8,7 @@ let bank = {
 let customer = [];
 
 function anyNumber() {
-    let accountNumber = "24";
+    let accountNumber = "56";
     for (let i = 0; i < 8; i++) {
         accountNumber += Math.floor(Math.random() * 10);
     }
@@ -16,10 +16,6 @@ function anyNumber() {
 }
 
 function creatAccount(accountName, age, phoneNumber) {
-    if (age < 18) {
-        console.log("Too young");
-    } else {
-        let accountNumber = anyNumber();
         
         customer.push({
             accountName: accountName,
@@ -30,7 +26,7 @@ function creatAccount(accountName, age, phoneNumber) {
             accountNumber: accountNumber
         });
     }
-}
+
 
 
 creatAccount("Tongzum Gomallang", 22, "11111111111");
